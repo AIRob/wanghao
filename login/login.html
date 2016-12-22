@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+
+    <input type="text" name="username" id="username">
+    <input type="password" id="password">
+    <input type="button" id="btn" value="登陆">
+
+
+    <script>
+
+        $("#btn").click(function(){
+            login();
+        });
+
+        function login(){
+            var username=$("#username").val();
+            var password=$("#password").val();
+
+            var data={
+                "username":username,
+                "password":password
+            };
+            $.ajax({
+                url:'http://localhost:3000',
+                type:"POST",
+                data:data,
+                success:function (data,status) {
+                        console.log(status)    //success
+                        console.log(data)         //login.js 中的res.(data) 中的data
+
+                },
+                error:function(data,status,e){
+
+                        console.log(data);
+
+                }
+            });
+        }
+    </script>
+</body>
+</html>
