@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "page/one/index",
+    "page/two/index",
+    "page/three/index",
+    "page/four/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "light",
+    "navigationBarTitleText": "侧滑布局",
+    "navigationBarBackgroundColor": "#009688",
+    "backgroundColor": "#fbf9fe"
+  }
+}

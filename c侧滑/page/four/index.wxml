@@ -1,0 +1,30 @@
+<!--page/one/index.wxml-->
+<view class="page">
+    <view class="page_bottom">
+    
+        <view class="page_content">
+           <view class="wc">
+                <navigator url="../one/index">第一个页面</navigator>
+           </view>
+            <view class="wc">
+                <navigator url="../two/index">第二个页面</navigator>
+           </view>
+            <view class="wc">
+                <navigator url="../three/index">第三个页面</navigator>
+           </view>
+            <view class="wc">
+                <navigator url="../four/index">第四个页面</navigator>
+           </view>
+        </view>    
+    </view>
+
+
+
+     <view  class="page_top {{open ? 'c-state' : ''}}"  bindtouchmove="tap_drag" bindtouchstart="tap_start">
+
+             <image bindtouchend="tap_end" src="../imgs/btn.png"   ></image>
+            <text>第四个页面</text>
+           
+    </view>
+</view>
+

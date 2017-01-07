@@ -1,0 +1,40 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.page_bottom{
+    color: red;
+    position:fixed;
+    z-index: 0;
+    transition: All 0.4s ease; 
+
+}
+.c-state{
+   transform: rotate(0deg) scale(1) translate(75%,0%); 
+}
+
+
+
+.page_bottom .wc{
+  padding:30rpx;
+}
+.page_top{
+  background-color: rgb(57, 125, 230);
+  width:750rpx;
+  height:100%;
+  position:fixed;
+  z-index:1;
+  transition: All 0.4s ease; 
+  color:#fff;
+}
+.page_top image{
+  width:50rpx;
+  height:50rpx;
+  border:2rpx solid red;
+}
