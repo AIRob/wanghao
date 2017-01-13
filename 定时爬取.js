@@ -152,10 +152,11 @@ function autoexec(){
     var j = schedule.scheduleJob(rule, function(){
 
         console.log("执行任务");
+    getInfo();
+        
 
     });
 
-    getInfo;
 }
 
 autoexec()
