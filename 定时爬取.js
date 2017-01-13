@@ -20,10 +20,10 @@ var connection;
 function handleError () {
     connection = mysql.createConnection({
         'host':'127.0.0.1',
-        'user':'root',
-        'password':'123456',
+        'user':'wang',
+        'password':'password',
         'port':'3306',
-        'database':'test1'
+        'database':'test'
     });
 
 
