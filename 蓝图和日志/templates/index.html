@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/style.css/">
+    <script src="/static/jq.js/"></script>
+
+</head>
+<body>
+    <h4>index1</h4>
+    <script>
+        $(function(){
+            $.ajax({
+                url:'/admin3',
+                datatype:'JSON',
+{#                data:{#}
+{#                    'a':'12fjnjgjn',#}
+{#                    'b':2#}
+{#                },#}
+                success:function(res){
+                    console.log(res)
+                },
+                error:function(err){
+                    console.log(err)
+                }
+
+            })
+        })
+    </script>
+</body>
+</html>
